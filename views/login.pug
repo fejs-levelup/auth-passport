@@ -1,0 +1,28 @@
+doctype html
+head
+  title Login
+  meta(charset="utf8")
+
+body
+  nav
+    ul
+      li: a(href="/signup") Sign up
+  h1 Login
+  form(
+    action="/login"
+    method="POST"
+  )
+    label(for="username") Username: 
+    input#username(
+      type="text"
+      required
+      name="username"
+    )
+    br
+    label(for="password") Password: 
+    input#password(
+      type="password"
+      required
+      name="password"
+    )
+    button Login
